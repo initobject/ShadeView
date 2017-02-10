@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tab_background"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="1dp">
+
+        <com.example.zy.myapplication.ShadeView
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:icon="@drawable/weixin"
+            app:text="微信" />
+
+        <com.example.zy.myapplication.ShadeView
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:icon="@drawable/address_book"
+            app:text="通讯录" />
+
+        <com.example.zy.myapplication.ShadeView
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:icon="@drawable/discover"
+            app:text="发现" />
+
+        <com.example.zy.myapplication.ShadeView
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:icon="@drawable/me"
+            app:text="我" />
+
+    </LinearLayout>
+
+</LinearLayout>
